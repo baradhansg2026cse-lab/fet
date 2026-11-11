@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML5 Website</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Learning HTML5 Web Designing</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="home">
+            <h2>HTML5 Basics</h2>
+            <p>HTML stands for HyperText Markup Language.</p>
+            <h3>HTML is used to create web pages.</h3>
+            <span>Learn HTML easily!</span>
+            <br>
+            <hr>
+        </section>
+
+        <article>
+            <h2>About HTML</h2>
+            <p>HTML is the standard language for web development.</p>
+            <img src="image.jpg" alt="Sample Image" width="200">
+        </article>
+
+        <aside>
+            <h3>Important Topics</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </aside>
+
+        <!-- Ordered List -->
+        <h3>Steps to Learn HTML</h3>
+        <ol>
+            <li>Learn Basic Tags</li>
+            <li>Learn Forms</li>
+            <li>Create a Website</li>
+        </ol>
+
+        <!-- Audio -->
+        <h3>Audio Element</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Video -->
+        <h3>Video Element</h3>
+        <video width="300" controls>
+            <source src="video.mp4" type="video/mp4">
+            <track src="captions.vtt"
+                   kind="captions"
+                   srclang="en"
+                   label="English">
+        </video>
+
+        <!-- Form -->
+        <h2>Registration Form</h2>
+
+        <form>
+            Name:
+            <input type="text" placeholder="Enter Name">
+            <br><br>
+
+            Email:
+            <input type="email" placeholder="Enter Email">
+            <br><br>
+
+            Password:
+            <input type="password">
+            <br><br>
+
+            Age:
+            <input type="number">
+            <br><br>
+
+            Date:
+            <input type="date">
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+
+            Hobbies:
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Music
+            <br><br>
+
+            Upload File:
+            <input type="file">
+            <br><br>
+
+            Choose Range:
+            <input type="range">
+            <br><br>
+
+            Choose Color:
+            <input type="color">
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <!-- Canvas -->
+        <h2>Canvas Element</h2>
+        <canvas id="myCanvas"
+                width="300"
+                height="150"
+                style="border:1px solid black;">
+        </canvas>
+
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(20, 20, 100, 80);
+        </script>
+
+        <!-- Data Attributes -->
+        <h2>Data Attributes</h2>
+        <div data-id="101"
+             data-name="Laptop"
+             data-price="55000">
+            Product Details
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
